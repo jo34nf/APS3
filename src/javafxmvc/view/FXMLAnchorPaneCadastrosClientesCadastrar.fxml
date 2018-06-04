@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="745.0" prefWidth="421.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxmvc.controller.FXMLAnchorPaneCadastrosClientesCadastrarController">
+   <children>
+      <TabPane layoutX="-1.0" layoutY="-1.0" prefHeight="745.0" prefWidth="420.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Pessoa Física">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="716.0" prefWidth="472.0">
+                     <children>
+                        <Text layoutX="43.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nome" wrappingWidth="32.619140625" />
+                        <TextField fx:id="textFieldPFNome" layoutX="42.0" layoutY="39.0" promptText="Judith Jubelita" />
+                        <Text layoutX="216.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CPF" />
+                        <TextField fx:id="textFieldPFCPF" layoutX="216.0" layoutY="39.0" promptText="99999999999" />
+                        <Text layoutX="43.0" layoutY="94.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nascimento" />
+                        <TextField fx:id="textFieldPFNasc" layoutX="42.0" layoutY="98.0" promptText="01/01/1999" />
+                        <Text layoutX="216.0" layoutY="94.0" strokeType="OUTSIDE" strokeWidth="0.0" text="R.G." />
+                        <TextField fx:id="textFieldPFRG" layoutX="216.0" layoutY="98.0" promptText="9999999" />
+                        <Text layoutX="43.0" layoutY="149.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email" />
+                        <TextField fx:id="textFieldPFEmail" layoutX="42.0" layoutY="152.0" promptText="judith@email.com" />
+                        <Text layoutX="43.0" layoutY="202.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Telefone" />
+                        <TextField fx:id="textFieldPFTel" layoutX="42.0" layoutY="206.0" prefHeight="25.0" prefWidth="81.0" promptText="4833811100" />
+                        <Text layoutX="171.0" layoutY="203.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Celular" />
+                        <TextField fx:id="textFieldPFCel" layoutX="170.0" layoutY="206.0" prefHeight="25.0" prefWidth="89.0" promptText="48991234567" />
+                        <Text layoutX="43.0" layoutY="260.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CNH" />
+                        <TextField fx:id="textFieldPFCNH" layoutX="42.0" layoutY="263.0" promptText="999999999999" />
+                        <Text layoutX="216.0" layoutY="260.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Venc. CNH" />
+                        <TextField fx:id="textFieldPFVencCNH" layoutX="216.0" layoutY="263.0" prefHeight="25.0" prefWidth="80.0" promptText="01/01/1999" />
+                        <Text layoutX="43.0" layoutY="380.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CEP" />
+                        <TextField fx:id="textFieldPFCEP" layoutX="42.0" layoutY="384.0" prefHeight="25.0" prefWidth="78.0" promptText="88111320" />
+                        <Text layoutX="142.0" layoutY="380.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Rua" />
+                        <TextField fx:id="textFieldPFRua" layoutX="140.0" layoutY="384.0" prefHeight="25.0" prefWidth="192.0" promptText="Célio Veiga" />
+                        <Text layoutX="350.0" layoutY="381.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Número" />
+                        <TextField fx:id="textFieldPFNum" layoutX="349.0" layoutY="384.0" prefHeight="25.0" prefWidth="50.0" promptText="220" />
+                        <Text layoutX="43.0" layoutY="432.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cidade" />
+                        <TextField fx:id="textFieldPFCid" layoutX="42.0" layoutY="436.0" promptText="São José" />
+                        <Text layoutX="213.0" layoutY="431.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bairro" />
+                        <TextField fx:id="textFieldPFBair" layoutX="212.0" layoutY="435.0" prefHeight="25.0" prefWidth="180.0" promptText="Jardim Cidade de Florianópolis " />
+                        <Text layoutX="43.0" layoutY="486.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Estado" />
+                        <TextField fx:id="textFieldPFEsta" layoutX="42.0" layoutY="490.0" promptText="Santa Catarina" />
+                        <Text layoutX="217.0" layoutY="488.0" strokeType="OUTSIDE" strokeWidth="0.0" text="País" />
+                        <TextField fx:id="textFieldPFPais" layoutX="216.0" layoutY="492.0" promptText="Brasil" />
+                        <Text layoutX="43.0" layoutY="539.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Complemento" />
+                        <TextField fx:id="textFieldPFComp" layoutX="42.0" layoutY="543.0" promptText="Bloco A" />
+                        <Separator layoutX="-10.0" layoutY="326.0" prefHeight="0.0" prefWidth="720.0" />
+                        <Button fx:id="buttonCancelar" layoutX="63.0" layoutY="610.0" mnemonicParsing="false" onAction="#handleButtonCancelar" prefHeight="60.0" prefWidth="130.0" text="Cancelar" />
+                        <Button fx:id="buttonCadastrarPF" layoutX="224.0" layoutY="610.0" mnemonicParsing="false" onAction="#handleButtonCadastrarPF" prefHeight="60.0" prefWidth="130.0" text="Cadastrar" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="Pessoa Jurídica">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Text layoutX="43.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Razão Social" wrappingWidth="89.619140625" />
+                        <TextField fx:id="textFieldPJRaz" layoutX="42.0" layoutY="39.0" promptText="Judith LTDA" />
+                        <Text layoutX="216.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CNPJ" />
+                        <TextField fx:id="textFieldPJCNPJ" layoutX="216.0" layoutY="39.0" promptText="99999999999" />
+                        <Text layoutX="43.0" layoutY="94.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Responsável" />
+                        <TextField fx:id="textFieldPJResp" layoutX="42.0" layoutY="98.0" promptText="Judith Jubelita" />
+                        <Text layoutX="216.0" layoutY="94.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Inscrição Municipal" />
+                        <TextField fx:id="textFieldPJIM" layoutX="216.0" layoutY="98.0" promptText="9999999" />
+                        <Text layoutX="43.0" layoutY="149.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email" />
+                        <TextField fx:id="textFieldPJEmail" layoutX="42.0" layoutY="152.0" promptText="judith@email.com" />
+                        <Text layoutX="43.0" layoutY="202.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Telefone" />
+                        <TextField fx:id="textFieldPJTel" layoutX="42.0" layoutY="206.0" prefHeight="25.0" prefWidth="81.0" promptText="4833811100" />
+                        <Text layoutX="171.0" layoutY="203.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Celular" />
+                        <TextField fx:id="textFieldPJCel" layoutX="170.0" layoutY="206.0" prefHeight="25.0" prefWidth="89.0" promptText="48991234567" />
+                        <Text layoutX="43.0" layoutY="260.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CNH" />
+                        <TextField fx:id="textFieldPJCNH" layoutX="42.0" layoutY="263.0" promptText="999999999999" />
+                        <Text layoutX="216.0" layoutY="260.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Venc. CNH" />
+                        <TextField fx:id="textFieldPJVencCNH" layoutX="216.0" layoutY="263.0" prefHeight="25.0" prefWidth="80.0" promptText="01/01/1999" />
+                        <Text layoutX="43.0" layoutY="380.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CEP" />
+                        <TextField fx:id="textFieldPJCEP" layoutX="42.0" layoutY="384.0" prefHeight="25.0" prefWidth="78.0" promptText="88111320" />
+                        <Text layoutX="142.0" layoutY="380.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Rua" />
+                        <TextField fx:id="textFieldPJRua" layoutX="140.0" layoutY="384.0" prefHeight="25.0" prefWidth="192.0" promptText="Célio Veiga" />
+                        <Text layoutX="350.0" layoutY="381.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Número" />
+                        <TextField fx:id="textFieldPJNum" layoutX="349.0" layoutY="384.0" prefHeight="25.0" prefWidth="50.0" promptText="220" />
+                        <Text layoutX="43.0" layoutY="432.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cidade" />
+                        <TextField fx:id="textFieldPJCid" layoutX="42.0" layoutY="436.0" promptText="São José" />
+                        <Text layoutX="213.0" layoutY="431.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bairro" />
+                        <TextField fx:id="textFieldPJBair" layoutX="212.0" layoutY="435.0" prefHeight="25.0" prefWidth="180.0" promptText="Jardim Cidade de Florianópolis " />
+                        <Text layoutX="43.0" layoutY="486.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Estado" />
+                        <TextField fx:id="textFieldPJEst" layoutX="42.0" layoutY="490.0" promptText="Santa Catarina" />
+                        <Text layoutX="217.0" layoutY="488.0" strokeType="OUTSIDE" strokeWidth="0.0" text="País" />
+                        <TextField fx:id="textFieldPJPais" layoutX="216.0" layoutY="492.0" promptText="Brasil" />
+                        <Text layoutX="43.0" layoutY="539.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Complemento" />
+                        <TextField fx:id="textFieldPJComp" layoutX="42.0" layoutY="543.0" promptText="Bloco A" />
+                        <Separator layoutX="-10.0" layoutY="326.0" prefHeight="0.0" prefWidth="720.0" />
+                        <Button fx:id="buttonCancelar" layoutX="63.0" layoutY="610.0" mnemonicParsing="false" onAction="#handleButtonCancelar" prefHeight="60.0" prefWidth="130.0" text="Cancelar" />
+                        <Button fx:id="buttonCadastrarPJ" layoutX="224.0" layoutY="610.0" mnemonicParsing="false" onAction="#handleButtonCadastrarPJ" prefHeight="60.0" prefWidth="130.0" text="Cadastrar" />
+                     </children></AnchorPane>
+            </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>

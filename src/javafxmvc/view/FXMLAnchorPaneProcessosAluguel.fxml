@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/9.0.1" fx:controller="javafxmvc.controller.FXMLAnchorPaneProcessosAluguelController">
+   <children>
+      <TextField fx:id="textFieldBuscaID" layoutX="35.0" layoutY="355.0" prefHeight="25.0" prefWidth="61.0" />
+      <Text layoutX="250.0" layoutY="49.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Aluguel">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Text>
+      <Text layoutX="18.0" layoutY="372.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ID" />
+      <Button fx:id="buttonBuscaID" layoutX="103.0" layoutY="355.0" mnemonicParsing="false" onAction="#handleButtonPesquisarID" text="Pesquisar" />
+      <RadioButton fx:id="radioButtonPJ" layoutX="302.0" layoutY="330.0" mnemonicParsing="false" onAction="#radio2" text="Pessoa Jurídica" />
+      <RadioButton fx:id="radioButtonPF" layoutX="206.0" layoutY="331.0" mnemonicParsing="false" onAction="#radio1" text="Pessoa Física" />
+      <TextField fx:id="textFieldBuscaCliente" layoutX="235.0" layoutY="355.0" prefHeight="25.0" prefWidth="100.0" />
+      <Button fx:id="buttonBuscaCliente" layoutX="340.0" layoutY="355.0" mnemonicParsing="false" onAction="#handleButtonPesquisarCliente" text="Pesquisar" />
+      <GridPane layoutX="20.0" layoutY="77.0" AnchorPane.bottomAnchor="83.0" AnchorPane.leftAnchor="20.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="102.0" minWidth="10.0" prefWidth="95.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="105.0" minWidth="10.0" prefWidth="105.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="105.0" minWidth="10.0" prefWidth="105.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="105.0" minWidth="10.0" prefWidth="105.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="105.0" minWidth="10.0" prefWidth="105.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label contentDisplay="CENTER" prefHeight="17.0" prefWidth="38.0" text="Status:" />
+            <Label fx:id="labelAluguel01" text="Label" GridPane.columnIndex="1" />
+            <Label text="Tipo:" GridPane.rowIndex="1" />
+            <Label fx:id="labelAluguel11" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Label text="Fabricante:" GridPane.rowIndex="2" />
+            <Label text="Ano/Modelo:" GridPane.rowIndex="4" />
+            <Label text="Cor:" GridPane.rowIndex="5" />
+            <Label text="Modelo:" GridPane.rowIndex="3" />
+            <Label fx:id="labelAluguel21" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Label fx:id="labelAluguel31" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <Label fx:id="labelAluguel41" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <Label fx:id="labelAluguel51" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            <Label fx:id="labelAluguel61" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+            <Label text="Chassi:" GridPane.rowIndex="6" />
+            <Label text="Cliente:" GridPane.columnIndex="3" />
+            <Label text="Dias desejados:" GridPane.columnIndex="3" GridPane.rowIndex="4" />
+            <Label text="Preço Total:" GridPane.columnIndex="3" GridPane.rowIndex="6" />
+            <Label text="Preço Diária:" GridPane.columnIndex="3" GridPane.rowIndex="5" />
+            <TextField fx:id="textFieldDias" alignment="CENTER" prefHeight="17.0" prefWidth="37.0" promptText="5" GridPane.columnIndex="4" GridPane.rowIndex="4" />
+            <Label fx:id="labelAluguel04" text="Label" GridPane.columnIndex="4" />
+            <Label fx:id="labelAluguel54" text="Label" GridPane.columnIndex="4" GridPane.rowIndex="5" />
+            <Label fx:id="labelAluguel64" text="Label" GridPane.columnIndex="4" GridPane.rowIndex="6" />
+            <Label fx:id="labelAluguel13" text="Label" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+            <Label fx:id="labelAluguel14" text="Label" GridPane.columnIndex="4" GridPane.rowIndex="1" />
+            <Label fx:id="labelAluguel23" text="CNH:" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+            <Label fx:id="labelAluguel24" text="Label" GridPane.columnIndex="4" GridPane.rowIndex="2" />
+         </children>
+      </GridPane>
+      <Button fx:id="buttonCalcular" layoutX="535.0" layoutY="200.0" mnemonicParsing="false" onAction="#calcularTotal" text="Calcular" />
+      <Group layoutX="440.0" layoutY="316.0" AnchorPane.bottomAnchor="20.0" AnchorPane.rightAnchor="20.0">
+         <children>
+            <Button fx:id="buttonVoltar" mnemonicParsing="false" onAction="#handleButtonVoltar" text="Voltar" />
+            <Button fx:id="buttonConfirmar" layoutX="62.0" mnemonicParsing="false" onAction="#handleButtonConfirmar" text="Confirmar" />
+         </children>
+      </Group>
+      <Text layoutX="180.0" layoutY="372.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CPF/CNPJ" />
+   </children>
+</AnchorPane>

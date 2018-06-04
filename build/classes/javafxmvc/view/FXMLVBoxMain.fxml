@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxmvc.controller.FXMLVBoxMainController">
+   <children>
+      <MenuBar>
+        <menus>
+          <Menu mnemonicParsing="false" text="Cadastros">
+            <items>
+                  <MenuItem fx:id="menuItemCadastrosClientes" mnemonicParsing="false" onAction="#handleMenuItemCadastrosClientes" text="Clientes" />
+                  <MenuItem fx:id="menuItemCadastrosVeiculos" mnemonicParsing="false" onAction="#handleMenuItemCadastrosVeiculos" text="Veiculos" />
+                  <MenuItem fx:id="menuItemCadastrosPromocoes" mnemonicParsing="false" onAction="#handleMenuItemCadastrosPromocoes" text="Promoções" />
+                  <MenuItem fx:id="menuItemCadastrosSeguradoras" mnemonicParsing="false" onAction="#handleMenuItemCadastrosSeguradoras" text="Seguradoras" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Processos">
+            <items>
+                  <MenuItem fx:id="menuItemProcessosVendas" mnemonicParsing="false" onAction="#handleMenuItemProcessosVendas" text="Vendas" />
+              <MenuItem fx:id="menuItemProcessosAluguel" mnemonicParsing="false" onAction="#handleMenuItemProcessosAluguel" text="Aluguel" />
+                  <MenuItem fx:id="menuItemProcessosRetorno" mnemonicParsing="false" onAction="#handleMenuItemProcessosRetorno" text="Retorno" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Relátorios">
+            <items>
+              <MenuItem fx:id="menuItemRelatoriosVendas" mnemonicParsing="false" onAction="#handleMenuItemRelatoriosVendas" text="Vendas" />
+                  <MenuItem fx:id="menuItemRelatoriosAluguel" mnemonicParsing="false" onAction="#handleMenuItemRelatoriosAluguel" text="Alugueis" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <AnchorPane fx:id="anchorPane" prefHeight="378.0" prefWidth="600.0">
+         <children>
+            <TableView fx:id="tableViewVeiculos" layoutX="62.0" layoutY="42.0" prefHeight="375.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+              <columns>
+                <TableColumn fx:id="tableColumnVeiculosId" prefWidth="50.0" text="ID" />
+                <TableColumn fx:id="tableColumnVeiculosTipo" prefWidth="72.0" text="Tipo" />
+                  <TableColumn fx:id="tableColumnVeiculosMarca" prefWidth="112.0" text="Marca" />
+                  <TableColumn fx:id="tableColumnVeiculosModelo" prefWidth="153.0" text="Modelo" />
+                  <TableColumn fx:id="tableColumnVeiculosAnoF" prefWidth="66.0" text="Ano Fabric" />
+                  <TableColumn fx:id="tableColumnVeiculosAnoM" prefWidth="120.0" text="Ano/Modelo" />
+              </columns>
+               <columnResizePolicy>
+                  <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+               </columnResizePolicy>
+            </TableView>
+         </children></AnchorPane>
+   </children>
+</VBox>

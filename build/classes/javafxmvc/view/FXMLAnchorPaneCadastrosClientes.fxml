@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxmvc.controller.FXMLAnchorPaneCadastrosClientesController">
+   <children>
+      <SplitPane dividerPositions="0.38461538461538464" layoutX="108.0" layoutY="75.0" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="398.0" prefWidth="225.0">
+               <children>
+                  <TableView fx:id="tableViewClientes" prefHeight="398.0" prefWidth="227.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <columns>
+                      <TableColumn fx:id="tableColumnClienteNome" prefWidth="75.0" text="Nome" />
+                      <TableColumn fx:id="tableColumnClienteTipoCliente" prefWidth="75.0" text="Tipo Cliente" />
+                    </columns>
+                     <columnResizePolicy>
+                        <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                     </columnResizePolicy>
+                  </TableView>
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <Label layoutX="119.0" layoutY="14.0" text="Detalhes do Cliente">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <GridPane layoutX="82.0" layoutY="98.0" prefHeight="200.0" prefWidth="193.0" AnchorPane.leftAnchor="75.0">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="108.0" minWidth="10.0" prefWidth="81.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="117.0" minWidth="10.0" prefWidth="112.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Label fx:id="labelCliente00" text="Nome:" />
+                        <Label fx:id="labelCliente10" text="CPF:" GridPane.rowIndex="1" />
+                        <Label fx:id="labelCliente20" text="Nascimento:" GridPane.rowIndex="2" />
+                        <Label fx:id="labelCliente30" text="R.G.:" GridPane.rowIndex="3" />
+                        <Label fx:id="labelCliente01" text="Label" GridPane.columnIndex="1" />
+                        <Label fx:id="labelCliente11" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                        <Label fx:id="labelCliente21" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                        <Label fx:id="labelCliente31" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                        <Label fx:id="labelCliente40" text="Email:" GridPane.rowIndex="4" />
+                        <Label fx:id="labelCliente41" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                        <Label fx:id="labelCliente50" text="CNH:" GridPane.rowIndex="5" />
+                        <Label fx:id="labelCliente51" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                        <Label fx:id="labelCliente60" text="Venc. CNH:" GridPane.rowIndex="6" />
+                        <Label fx:id="labelCliente61" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                     </children>
+                  </GridPane>
+                  <Group layoutX="143.0" layoutY="342.0" AnchorPane.bottomAnchor="20.0" AnchorPane.rightAnchor="20.0">
+                     <children>
+                        <Button fx:id="buttonInserir" layoutX="147.0" mnemonicParsing="false" onAction="#handleButtonInserir" prefHeight="25.0" prefWidth="62.0" text="Inserir" />
+                        <Button fx:id="buttonAlterar" layoutX="73.0" mnemonicParsing="false" onAction="#handleButtonAlterar" prefHeight="25.0" prefWidth="62.0" text="Alterar" />
+                        <Button fx:id="buttonVoltar" mnemonicParsing="false" onAction="#handleButtonVoltar" prefHeight="25.0" prefWidth="62.0" text="Voltar" />
+                     </children>
+                  </Group>
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>

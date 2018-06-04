@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxmvc.controller.FXMLAnchorPaneCadastrosVeiculosController">
+  <tabs>
+    <Tab text="Carro">
+      <content>
+        <AnchorPane accessibleRole="TEXT" minHeight="0.0" minWidth="0.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <ComboBox id="25252" fx:id="comboBoxCarroFabricante" cache="true" layoutX="66.0" layoutY="35.0" onAction="#comboBoxCarroSelect" prefHeight="25.0" prefWidth="107.0" promptText="Fabricante" />
+                  <ComboBox fx:id="comboBoxCarroModelo" layoutX="200.0" layoutY="35.0" prefHeight="25.0" prefWidth="150.0" promptText="Modelo" />
+                  <Text layoutX="372.0" layoutY="31.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ano" />
+                  <TextField fx:id="textFieldCarroAno" alignment="CENTER" layoutX="370.0" layoutY="35.0" prefHeight="25.0" prefWidth="43.0" promptText="2018" />
+                  <Text layoutX="434.0" layoutY="31.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Modelo" />
+                  <TextField fx:id="textFieldCarroModelo" alignment="CENTER" layoutX="433.0" layoutY="35.0" prefHeight="25.0" prefWidth="42.0" promptText="2019" />
+                  <Text layoutX="66.0" layoutY="102.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Chassi" />
+                  <TextField fx:id="textFieldCarroChassi" layoutX="66.0" layoutY="106.0" prefHeight="25.0" prefWidth="134.0" promptText="9BWZZZ377VT004251 " />
+                  <Text layoutX="247.0" layoutY="102.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Placa" />
+                  <TextField fx:id="textFieldCarroPlaca" layoutX="247.0" layoutY="106.0" prefHeight="25.0" prefWidth="75.0" promptText="QWE-1234" />
+                  <Text layoutX="371.0" layoutY="102.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Renavam" />
+                  <TextField fx:id="textFieldCarroRenavam" layoutX="369.0" layoutY="106.0" prefHeight="25.0" prefWidth="93.0" promptText="77555906617" />
+                  <Text layoutX="66.0" layoutY="172.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Quilometragem" />
+                  <TextField fx:id="textFieldCarroKm" layoutX="66.0" layoutY="176.0" prefHeight="25.0" prefWidth="89.0" promptText="999999" />
+                  <Text layoutX="208.0" layoutY="172.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Potência" />
+                  <TextField fx:id="textFieldCarroPotencia" layoutX="208.0" layoutY="176.0" prefHeight="25.0" prefWidth="45.0" promptText="1.8" />
+                  <Text layoutX="292.0" layoutY="172.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cor" />
+                  <TextField fx:id="textFieldCarroCor" layoutX="292.0" layoutY="176.0" prefHeight="25.0" prefWidth="75.0" promptText="Vermelho" />
+                  <Text layoutX="402.0" layoutY="173.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Portas" />
+                  <TextField fx:id="textFieldCarroPortas" alignment="CENTER" layoutX="402.0" layoutY="176.0" prefHeight="25.0" prefWidth="35.0" promptText="4" />
+                  <CheckBox fx:id="checkBoxCarroBlindado" layoutX="61.0" layoutY="226.0" mnemonicParsing="false" text="Blindado" />
+                  <CheckBox fx:id="checkBoxCarroAr" layoutX="61.0" layoutY="255.0" mnemonicParsing="false" text="Ar Condicionado" />
+                  <CheckBox fx:id="checkBoxCarroVidro" layoutX="61.0" layoutY="283.0" mnemonicParsing="false" text="Vidro Elétrico" />
+                  <CheckBox fx:id="checkBoxCarroHidra" layoutX="61.0" layoutY="311.0" mnemonicParsing="false" text="Direção Hidráulica" />
+                  <CheckBox fx:id="checkBoxCarroEletri" layoutX="61.0" layoutY="338.0" mnemonicParsing="false" text="Direção Elétrica" />
+                  <CheckBox fx:id="checkBoxCarroMulti" layoutX="192.0" layoutY="226.0" mnemonicParsing="false" text="Multimídia" />
+                  <CheckBox fx:id="checkBoxCarroTeto" layoutX="192.0" layoutY="255.0" mnemonicParsing="false" text="Teto Solar" />
+                  <Button fx:id="buttonCarroVoltar" layoutX="356.0" layoutY="297.0" mnemonicParsing="false" onAction="#handleButtonVoltar" prefHeight="45.0" prefWidth="100.0" text="Voltar" />
+                  <Button fx:id="buttonCarroCadastrar" layoutX="478.0" layoutY="297.0" mnemonicParsing="false" onAction="#handleButtonCarroCadastrar" prefHeight="45.0" prefWidth="100.0" text="Cadastrar" />
+                  <Text fill="#0000003b" layoutX="418.0" layoutY="52.0" strokeType="OUTSIDE" strokeWidth="0.0" text="/">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Text>
+                  <TextField fx:id="textFieldCarroPrecoVenda" layoutX="342.0" layoutY="243.0" prefHeight="25.0" prefWidth="81.0" promptText="100.000" />
+                  <TextField fx:id="textFieldCarroPrecoAluguel" layoutX="454.0" layoutY="243.0" prefHeight="25.0" prefWidth="89.0" promptText="1.000" />
+                  <Text layoutX="343.0" layoutY="239.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Preço Venda" />
+                  <Text layoutX="455.0" layoutY="240.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Preço Aluguel" />
+                  <Text layoutX="328.0" layoutY="261.0" strokeType="OUTSIDE" strokeWidth="0.0" text="R$" />
+                  <Text layoutX="440.0" layoutY="261.0" strokeType="OUTSIDE" strokeWidth="0.0" text="R$" />
+               </children></AnchorPane>
+      </content>
+    </Tab>
+      <Tab text="Jet Ski">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <ComboBox id="25252" fx:id="comboBoxJetSkiFabricante" cache="true" layoutX="36.0" layoutY="52.0" onAction="#comboBoxJetSkiSelect" prefHeight="25.0" prefWidth="107.0" promptText="Fabricante" />
+                  <ComboBox fx:id="comboBoxJetSkiModelo" layoutX="170.0" layoutY="52.0" prefHeight="25.0" prefWidth="150.0" promptText="Modelo" />
+                  <Text layoutX="358.0" layoutY="47.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ano" />
+                  <TextField fx:id="textFieldJetSkiAno" alignment="CENTER" layoutX="357.0" layoutY="51.0" prefHeight="25.0" prefWidth="43.0" promptText="2018" />
+                  <Text layoutX="424.0" layoutY="47.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Modelo" />
+                  <TextField fx:id="textFieldJetSkiModelo" alignment="CENTER" layoutX="423.0" layoutY="51.0" prefHeight="25.0" prefWidth="43.0" promptText="2019" />
+                  <Text layoutX="36.0" layoutY="114.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Chassi" />
+                  <TextField fx:id="textFieldJetSkiChassi" layoutX="36.0" layoutY="118.0" prefHeight="25.0" prefWidth="134.0" promptText="9BWZZZ377VT004251 " />
+                  <Text layoutX="198.0" layoutY="111.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Quilometragem" />
+                  <TextField fx:id="textFieldJetSkiKm" layoutX="198.0" layoutY="118.0" prefHeight="25.0" prefWidth="89.0" promptText="999999" />
+                  <Text layoutX="313.0" layoutY="114.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Potência" />
+                  <TextField fx:id="textFieldJetSkiPotencia" layoutX="313.0" layoutY="118.0" prefHeight="25.0" prefWidth="45.0" promptText="1.8" />
+                  <Text layoutX="390.0" layoutY="111.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cor" />
+                  <TextField fx:id="textFieldJetSkiCor" layoutX="384.0" layoutY="117.0" prefHeight="25.0" prefWidth="75.0" promptText="Vermelho" />
+                  <Text fill="#0000003b" layoutX="407.0" layoutY="69.0" strokeType="OUTSIDE" strokeWidth="0.0" text="/">
+                     <font>
+                        <Font size="18.0" />
+                     </font></Text>
+                  <CheckBox fx:id="checkBoxJetSki2" layoutX="36.0" layoutY="180.0" mnemonicParsing="false" text="2 Lugares" />
+                  <CheckBox fx:id="checkBoxJetSki3" layoutX="36.0" layoutY="210.0" mnemonicParsing="false" text="3 Lugares" />
+                  <CheckBox fx:id="checkBoxJetSkiColete" layoutX="36.0" layoutY="239.0" mnemonicParsing="false" text="Colete Salva-vidas" />
+                  <Button fx:id="buttonJetSkiVoltar" layoutX="356.0" layoutY="297.0" mnemonicParsing="false" onAction="#handleButtonVoltar" prefHeight="45.0" prefWidth="100.0" text="Voltar" />
+                  <Button fx:id="buttonJetSkiCadastrar" layoutX="478.0" layoutY="297.0" mnemonicParsing="false" onAction="#handleButtonJetSkiCadastrar" prefHeight="45.0" prefWidth="100.0" text="Cadastrar" />
+                  <TextField fx:id="textFieldJetSkiPrecoVenda" layoutX="342.0" layoutY="243.0" prefHeight="25.0" prefWidth="81.0" promptText="100.000" />
+                  <TextField fx:id="textFieldJetSkiPrecoAluguel" layoutX="454.0" layoutY="243.0" prefHeight="25.0" prefWidth="89.0" promptText="1.000" />
+                  <Text layoutX="343.0" layoutY="239.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Preço Venda" />
+                  <Text layoutX="455.0" layoutY="240.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Preço Aluguel" />
+                  <Text layoutX="440.0" layoutY="261.0" strokeType="OUTSIDE" strokeWidth="0.0" text="R$" />
+                  <Text layoutX="328.0" layoutY="261.0" strokeType="OUTSIDE" strokeWidth="0.0" text="R$" />
+               </children>
+            </AnchorPane>
+        </content>
+      </Tab>
+  </tabs>
+</TabPane>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/9.0.1" fx:controller="javafxmvc.controller.FXMLAnchorPaneProcessosRetornoController">
+   <children>
+      <Text layoutX="196.0" layoutY="79.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Retorno de Aluguel">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Text>
+      <TextField fx:id="textFieldID" layoutX="226.0" layoutY="175.0" />
+      <Text layoutX="265.0" layoutY="171.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ID do veículo" />
+      <Button fx:id="buttonConfirmar" layoutX="300.0" layoutY="237.0" mnemonicParsing="false" onAction="#handleButtonConfirmar" text="Confirmar" />
+      <Button fx:id="buttonVoltar" layoutX="226.0" layoutY="237.0" mnemonicParsing="false" onAction="#handleButtonVoltar" text="Voltar" />
+   </children>
+</AnchorPane>
